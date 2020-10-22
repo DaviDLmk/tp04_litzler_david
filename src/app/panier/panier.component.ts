@@ -1,5 +1,5 @@
 import { Component, OnInit } from "@angular/core";
-//import { Store } from "@ngxs/store";
+import { Store } from "@ngxs/store";
 
 @Component({
   selector: "app-panier",
@@ -7,7 +7,7 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: ["./panier.component.css"]
 })
 export class PanierComponent implements OnInit {
-  constructor(/*private store: Store*/) {}
+  constructor(private storePanier: Store) {}
 
   ngOnInit() {}
 }
