@@ -1,4 +1,5 @@
 import { Component, VERSION } from "@angular/core";
+import { Store } from "@ngxs/store";
 
 @Component({
   selector: "my-app",
