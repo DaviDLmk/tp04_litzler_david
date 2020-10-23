@@ -1,5 +1,6 @@
 import { Component, OnInit } from "@angular/core";
 import { Produit } from "../models/produit";
+import { ApiService } from "../api.service";
 
 @Component({
   selector: "app-detail",
@@ -9,7 +10,7 @@ import { Produit } from "../models/produit";
 export class DetailComponent implements OnInit {
   produit: Produit;
 
-  constructor() {}
+  constructor(private apiService: ApiService) {}
 
   ngOnInit() {}
 }

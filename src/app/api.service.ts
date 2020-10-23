@@ -8,6 +8,7 @@ import { Produit } from "./models/produit";
 @Injectable()
 export class ApiService {
   produits: Observable<Produit[]>;
+  produit: Produit;
 
   constructor(private http: HttpClient) {}
   public getProduits(): Observable<Produit[]> {
