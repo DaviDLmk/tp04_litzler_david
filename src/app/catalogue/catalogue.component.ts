@@ -1,6 +1,7 @@
 import { Component, OnInit } from "@angular/core";
 import { Produit } from "../models/produit";
 import { Observable } from "rxjs";
+import { ApiService } from "../api.service";
 
 @Component({
   selector: "app-catalogue",
@@ -9,9 +10,10 @@ import { Observable } from "rxjs";
 })
 export class CatalogueComponent implements OnInit {
   produits: Observable<Produit[]>;
-  filterWord: string;
 
-  constructor() {}
+  constructor(private apiService: ApiService) {}
 
-  ngOnInit() {}
+  ngOnInit() {
+    this.produits = this.apiService.getProduits();
+  }
 }

@@ -8,9 +8,11 @@ import { PanierComponent } from "./panier/panier.component";
 import { CatalogueComponent } from "./catalogue/catalogue.component";
 import { CompteClientComponent } from "./compte-client/compte-client.component";
 import { AccueilComponent } from "./accueil/accueil.component";
+import { ApiService } from "./api.service";
+import { HttpClientModule } from "@angular/common/http";
 
 @NgModule({
-  imports: [BrowserModule, FormsModule],
+  imports: [BrowserModule, FormsModule, HttpClientModule],
   declarations: [
     AppComponent,
     HelloComponent,
@@ -19,6 +21,7 @@ import { AccueilComponent } from "./accueil/accueil.component";
     CompteClientComponent,
     AccueilComponent
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  providers: [ApiService]
 })
 export class AppModule {}
