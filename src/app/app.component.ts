@@ -1,5 +1,4 @@
 import { Component, VERSION } from "@angular/core";
-import { Store } from "@ngxs/store";
 
 @Component({
   selector: "my-app",
@@ -8,6 +7,4 @@ import { Store } from "@ngxs/store";
 })
 export class AppComponent {
   name = "Angular " + VERSION.major;
-
-  constructor(private storePanier: Store) {}
 }
