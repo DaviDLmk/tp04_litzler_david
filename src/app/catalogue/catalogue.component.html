@@ -1,5 +1,8 @@
 <p>Catalogue works</p>
 <div *ngFor="let item of produits | async ">
 	<h2><br>{{ item.nom }}</h2> {{item.prix}} €
-  
+		<input type="checkbox">
+
 </div>
+		<br>
+		<div><input type="button" value="Ajouter au panier"> </div>
