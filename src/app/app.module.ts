@@ -10,6 +10,7 @@ import { CompteClientComponent } from "./compte-client/compte-client.component";
 import { AccueilComponent } from "./accueil/accueil.component";
 import { ApiService } from "./api.service";
 import { HttpClientModule } from "@angular/common/http";
+import { DetailComponent } from './detail/detail.component';
 
 @NgModule({
   imports: [BrowserModule, FormsModule, HttpClientModule],
@@ -19,7 +20,8 @@ import { HttpClientModule } from "@angular/common/http";
     PanierComponent,
     CatalogueComponent,
     CompteClientComponent,
-    AccueilComponent
+    AccueilComponent,
+    DetailComponent
   ],
   bootstrap: [AppComponent],
   providers: [ApiService]
